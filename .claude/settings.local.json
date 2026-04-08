@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/GONZA/projects/TFG/nn_var_predictions_*.csv)",
+      "Bash(wc -l /c/Users/GONZA/projects/TFG/garch*_var_predictions.csv /c/Users/GONZA/projects/TFG/hs_var_predictions.csv)",
+      "Bash(python3:*)",
+      "Bash(ls -lh /c/Users/GONZA/projects/TFG/*.ipynb /c/Users/GONZA/projects/TFG/*.csv)",
+      "Bash(grep -E \"\\\\.\\(ipynb|csv|pkl|txt|pdf|png|json\\)$\")",
+      "Bash(python -c \":*)"
+    ]
+  }
+}
