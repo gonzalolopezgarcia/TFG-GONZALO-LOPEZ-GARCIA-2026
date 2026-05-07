@@ -1,0 +1,6 @@
+violations,median_gap_days,gaps_le_5,gaps_le_20,Model
+42,68.0,5,11,Softplus + dynamic features + SiLU LayerNorm
+41,77.5,5,11,Softplus + dynamic SiLU LayerNorm + rolling winsor
+32,53.0,8,12,Softplus + ratios + shocks
+36,35.0,8,16,Softplus base w=1
+39,59.5,6,9,Softplus + SiLU LayerNorm + downside pressure

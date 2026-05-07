@@ -1,0 +1,7 @@
+violations,median_gap_days,gaps_le_5,gaps_le_20,Model
+36,35.0,8,16,Softplus base w=1
+32,53.0,8,12,Softplus + ratios + shocks
+25,54.5,6,10,Softplus + downside shocks + stress memory
+18,104.0,2,3,Softplus + dynamic features
+21,140.5,3,6,Softplus + dynamic features + ReLU LayerNorm
+42,68.0,5,11,Softplus + dynamic features + SiLU LayerNorm
