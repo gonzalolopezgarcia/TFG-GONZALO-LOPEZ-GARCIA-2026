@@ -1,0 +1,9 @@
+﻿arch
+ipykernel
+matplotlib
+numpy
+pandas
+scipy
+torch
+tqdm
+yfinance
