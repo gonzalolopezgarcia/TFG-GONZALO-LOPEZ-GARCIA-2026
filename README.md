@@ -4,7 +4,7 @@ Carpeta curada del Trabajo de Fin de Grado:
 
 **Modelos de analisis supervisado para el analisis del Value at Risk de una cartera de activos financieros**.
 
-Esta version contiene solo los datos, resultados y notebooks necesarios para reproducir la comparacion final del TFG. Los notebooks experimentales y pruebas descartadas quedan fuera de esta carpeta.
+Este repositorio contiene los datos, resultados y notebooks necesarios para reproducir tanto la comparacion final del TFG como el analisis de sensibilidad que justifica la arquitectura del modelo neuronal (Capitulo 5).
 
 ## Estructura
 
@@ -13,6 +13,9 @@ Esta version contiene solo los datos, resultados y notebooks necesarios para rep
 - `results/tables/`: tablas por modelo, tablas anuales y comparacion final completa.
 - `figures/`: figuras generadas para la memoria.
 - `notebooks/`: notebooks ordenados y autosuficientes para generar datos, predicciones, tablas y graficas.
+- `notebooks/sensitivity/`: notebooks de las pruebas de sensibilidad del modelo MLP-VaR.
+- `results/sensitivity/`: predicciones y tablas de backtesting del analisis de sensibilidad.
+- `mlp_experiments/`: las siete configuraciones MLP-VaR usadas para justificar la tabla de sensibilidad del Capitulo 5 (configuracion, notebooks, predicciones y tablas).
 
 ## Modelo MLP final
 
@@ -20,7 +23,7 @@ El modelo neuronal final incluido es:
 
 `MLP Softplus + SiLU LayerNorm + downside pressure`
 
-No se incluye el MLP original experimental. La memoria presenta directamente el modelo final y lo compara contra:
+La memoria presenta el modelo final, justificado mediante el analisis de sensibilidad documentado en `mlp_experiments/`, y lo compara contra:
 
 - GARCH-t
 - GARCH normal
@@ -41,7 +44,7 @@ Ejecutar los notebooks en este orden:
 8. `notebooks/07_comparacion_final.ipynb`
 9. `notebooks/08_graficas_finales.ipynb`
 
-Los notebooks contienen el codigo necesario directamente en sus celdas. No dependen de una carpeta auxiliar ni de archivos situados fuera de `TFG_oficial/`.
+Los notebooks contienen el codigo necesario directamente en sus celdas. No dependen de una carpeta auxiliar ni de archivos situados fuera del repositorio.
 
 Nota: el notebook `00_construccion_dataset.ipynb` necesita conexion a internet si se quiere reconstruir el dataset desde cero mediante `yfinance`. Para reproducir resultados desde los datos ya incluidos, se puede empezar desde los notebooks posteriores.
 
