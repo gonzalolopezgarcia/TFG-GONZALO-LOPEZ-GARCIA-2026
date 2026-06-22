@@ -13,9 +13,7 @@ Este repositorio contiene los datos, resultados y notebooks necesarios para repr
 - `results/tables/`: tablas por modelo, tablas anuales y comparacion final completa.
 - `figures/`: figuras generadas para la memoria.
 - `notebooks/`: notebooks ordenados y autosuficientes para generar datos, predicciones, tablas y graficas.
-- `notebooks/sensitivity/`: notebooks de las pruebas de sensibilidad del modelo MLP-VaR.
-- `results/sensitivity/`: predicciones y tablas de backtesting del analisis de sensibilidad.
-- `mlp_experiments/`: las siete configuraciones MLP-VaR usadas para justificar la tabla de sensibilidad del Capitulo 5 (configuracion, notebooks, predicciones y tablas).
+- `mlp_experiments/`: las siete configuraciones MLP-VaR usadas para justificar la tabla de sensibilidad del Capitulo 5 (configuracion, notebooks, predicciones y tablas), incluido el barrido de ventanas del experimento Softplus base.
 
 ## Modelo MLP final
 
